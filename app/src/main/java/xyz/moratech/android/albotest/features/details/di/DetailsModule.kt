@@ -36,13 +36,13 @@ object DetailsModule {
 
             factory {
                 FetchBeersUseCase(
-                    beersRepository = get()
+                    beersRepository = get(named(CONTENT_REMOTE))
                 )
             }
 
             factory {
                 SaveDataUseCase(
-                    beersRepository = get()
+                    beersRepository = get(named(CONTENT_LOCAL))
                 )
             }
 

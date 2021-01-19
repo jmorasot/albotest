@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.Fragment
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.bumptech.glide.Glide
 import com.bumptech.glide.load.engine.DiskCacheStrategy
 import org.koin.androidx.viewmodel.ext.android.sharedViewModel
@@ -55,6 +56,7 @@ class BeerDetailsFragment : Fragment() {
         binding.beerDetailsCreatorTextView.text = beer.contributedBy
         binding.beerDetailsFoodTextView.text = buildFoodList(beer.foodPairing)
         binding.beerDetailsTipsTextView.text = beer.brewersTips
+        binding.beerDetailsIngredientsRecyclerView.layoutManager = LinearLayoutManager(requireContext())
         binding.beerDetailsIngredientsRecyclerView.adapter = IngredientsAdapter(
             ingredients
         )
