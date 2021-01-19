@@ -1,3 +1,13 @@
 <resources>
-    <string name="app_name">AlboTest</string>
+    <string name="app_name">Beer\'s</string>
+    <string name="beers_error">An error occurred while loading beers (Code %s)</string>
+
+    <string name="act_main_title">Pick your favorite beer</string>
+
+    <string name="fr_beers_empty">Sorry, but we don\'t have nothing to show now, please return later</string>
+
+    <string name="fr_details_ingredients_label">Ingredients:</string>
+    <string name="fr_details_food_label">Food pairing:</string>
+    <string name="fr_details_tips_label">Brewers tips:</string>
+    <string name="fr_details_beer_argument_error">The selected beer is not valid and can\'t be displayed</string>
 </resources>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Albo.TextAppearance">
+        <item name="android:fontFamily">@font/comfortaa_regular</item>
+        <item name="android:textColor">@color/textPrimary</item>
+    </style>
+
+    <style name="Albo.TextAppearance.Body">
+        <item name="android:textColor">@color/textPrimary</item>
+        <item name="android:textSize">@dimen/text_normal</item>
+    </style>
+
+    <style name="Albo.TextAppearance.Body.Subtitle">
+        <item name="android:fontFamily">@font/comfortaa_bold</item>
+        <item name="android:textColor">@color/primaryDark</item>
+        <item name="android:textSize">@dimen/text_big</item>
+    </style>
+
+    <style name="Albo.TextAppearance.Body.Large">
+        <item name="android:textSize">@dimen/text_large</item>
+    </style>
+
+    <style name="Albo.TextAppearance.Footer">
+        <item name="android:fontFamily">@font/comfortaa_medium</item>
+        <item name="android:textColor">@color/textSecondary</item>
+        <item name="android:textSize">@dimen/text_small</item>
+    </style>
+
+    <style name="Albo.TextAppearance.Title">
+        <item name="android:fontFamily">@font/comfortaa_bold</item>
+        <item name="android:gravity">start|center_vertical</item>
+        <item name="android:textSize">@dimen/text_extra_large</item>
+    </style>
+
+    <style name="Albo.TextAppearance.Title.Pretty">
+        <item name="android:fontFamily">@font/pacifico_regular</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/primary</item>
+        <item name="android:textSize">@dimen/text_header_large</item>
+    </style>
+</resources>

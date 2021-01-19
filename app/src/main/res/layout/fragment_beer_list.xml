@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/beerListSwipeToRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/viewFitConstraints"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/beerListRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/spacing_small"
+            tools:listitem="@layout/item_beer"/>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <TextView
+        style="@style/Albo.TextAppearance.Title.Pretty"
+        android:id="@+id/beerListEmptyTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/spacing_small"
+        android:text="@string/fr_beers_empty"
+        android:textSize="@dimen/text_large"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <ImageButton
+        style="@style/Widget.AppCompat.CompoundButton.RadioButton"
+        android:background="@drawable/background_rounded_button"
+        android:contentDescription="@null"
+        android:id="@+id/beerListRewindButton"
+        android:layout_width="@dimen/loading_size"
+        android:layout_height="@dimen/loading_size"
+        android:layout_margin="@dimen/spacing_large"
+        android:scaleType="centerCrop"
+        android:padding="@dimen/spacing_small"
+        android:src="@drawable/ic_return_up"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/beerLoadingCardView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/spacing_large"
+        app:cardCornerRadius="@dimen/spacing_large"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+        <ProgressBar
+            android:indeterminateTint="@color/primaryDark"
+            android:layout_width="@dimen/loading_size"
+            android:layout_height="@dimen/loading_size"
+            android:padding="@dimen/spacing_tiny"/>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

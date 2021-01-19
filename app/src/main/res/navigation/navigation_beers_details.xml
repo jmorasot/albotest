@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/navigation_beers_details"
+    app:startDestination="@id/itemsFragment">
+    <fragment
+        android:id="@+id/itemsFragment"
+        android:name="xyz.moratech.android.albotest.features.details.view.fragments.BeerListFragment"
+        android:label="BeersFragment" >
+        <action
+            android:id="@+id/navListToDetails"
+            app:destination="@id/detailsFragment"
+            app:enterAnim="@anim/push_left_in"
+            app:exitAnim="@anim/push_left_out" >
+        </action>
+
+    </fragment>
+    <fragment
+        android:id="@+id/detailsFragment"
+        android:name="xyz.moratech.android.albotest.features.details.view.fragments.BeerDetailsFragment"
+        android:label="DetailsFragment" >
+        <action
+            android:id="@+id/navDetailsToList"
+            app:destination="@id/itemsFragment"
+            app:enterAnim="@anim/push_left_in"
+            app:exitAnim="@anim/push_left_out" />
+    </fragment>
+</navigation>

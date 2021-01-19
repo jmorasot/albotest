@@ -7,4 +7,18 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <color name="background">@color/white</color>
+    <color name="card_background">#FF018786</color>
+
+    <color name="accent">#4A2907</color>
+    <color name="primary">@color/teal_200</color>
+    <color name="primaryDark">@color/purple_700</color>
+    <color name="primaryDark10">#1A3700B3</color>
+
+    <color name="textPrimary">#1B0808</color>
+    <color name="textSecondary">#4E4C4C</color>
+
+    <color name="toolbar">#444872</color>
+    <color name="toolbar10">#1A444872</color>
 </resources>
