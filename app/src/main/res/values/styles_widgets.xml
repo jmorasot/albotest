@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Albo.Widget" />
+    <style name="Albo.Widget.TextView" />
+    <style name="Albo.Widget.TextView.Title">
+        <item name="android:textAppearance">@style/Albo.TextAppearance.Title.Pretty</item>
+    </style>
+</resources>
